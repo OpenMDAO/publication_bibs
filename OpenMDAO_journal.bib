@@ -252,3 +252,90 @@ pdf = {http://openmdao.org/pubs/joa_asguegli_2020.pdf},
     doi = {10.1007/s00158-013-1006-6},
     pdf = {http://openmdao.org/pubs/Pate_Gray_German-_2013_-Graph_Problem_Formulation_SMO.pdf}
 }
+
+@article{Adler2022d,
+  abstract = {Aerostructural optimization traditionally uses a single or small number of cruise conditions to estimate the mission fuel burn objective function. In reality, a mission includes other flight segments contributing to fuel burn, such as climbing and descent. We aim to quantify how much performance is sacrificed by optimizing the design for a fuel burn approximation that ignores these other flight segments and flight conditions. To do this, we compare traditional approaches to mission-based optimization, which uses an accurate fuel burn objective computed by numerically integrating fuel flow across the mission profile. We find that mission-based optimization offers only marginal benefits over traditional single-point and multipoint approaches for aerostructural optimization of a narrowbody aircraft---only 1--2\% in the most extreme cases. Thus, the traditional aerostructural optimization is acceptable, especially in cases where most fuel is burned during cruise. For the
+cases where climb fuel burn is significant, we introduce a simple change to traditional fuel burn approximation methods that allows the optimizer to find nearly all the fuel burn reduction of mission-based optimization but at the computational cost of multipoint optimization.},
+  author = {Adler, Eytan J. and Martins, Joaquim R. R. A.},
+  doi = {10.2514/1.c037096},
+  issn = {1533-3868},
+  journal = {Journal of Aircraft},
+  keywords = {OpenMDAO, OpenConcept, OpenAeroStruct},
+  month = {December},
+  publisher = {American Institute of Aeronautics and Astronautics},
+  title = {Efficient Aerostructural Wing Optimization Considering Mission Analysis},
+  year = {2022},
+  pdf = {https://www.researchgate.net/publication/366553107_Efficient_Aerostructural_Wing_Optimization_Considering_Mission_Analysis},
+}
+
+@article{Hwang2014b,
+  author = {John T. Hwang and Dae Young Lee and James W. Cutler and Joaquim R. R. A. Martins},
+  doi = {10.2514/1.A32751},
+  journal = {Journal of Spacecraft and Rockets},
+  keywords = {OpenMDAO},
+  month = {September},
+  number = {5},
+  pages = {1648--1663},
+  title = {Large-Scale Multidisciplinary Optimization of a Small Satellite's Design and Operation},
+  volume = {51},
+  year = {2014}
+}
+
+@article{Hwang2019a,
+  abstract = {Traditionally, computational design optimization of commercial aircraft is performed by considering a small number of representative operating conditions. These conditions are based on the design Mach number, altitude, payload, and range for which the aircraft will be flown. However, the design also influences which routes and mission parameters are optimal, and so there is coupling that is ignored when using the traditional approach. Here, the aircraft design, mission profiles, and the allocation of aircraft to routes in an airline network are simultaneously optimized. This is a mixed-integer nonlinear programming problem that is reformulated as a nonlinear programming problem because of the large number of design variables. The reformulated problem is solved using a gradient-based optimization approach with a parallel computational framework that facilitates the multidisciplinary analysis and the derivative computation. A surrogate model is used for the
+computational fluid dynamics analysis that is retrained in each optimization iteration given the new set of shape design variables. The resulting optimization problem contains over 4,000 design variables and close to 14,000 constraints. The optimization results show a 2\% increase in airline profit compared with the traditional multipoint optimization approach. The wing area increases to the upper bound, enabling a higher cruise altitude that improves propulsive efficiency. This study finds that simultaneously optimizing the allocation, mission, and design to maximize airline profit results in a different optimized wing design from that resulting from the multipoint optimization approach.},
+  author = {John T. Hwang and John Jasa and Joaquim R. R. A. Martins},
+  doi = {10.2514/1.C035082},
+  journal = {Journal of Aircraft},
+  keywords = {openmdao},
+  month = {May},
+  number = {3},
+  pages = {1165--1178},
+  title = {High-fidelity design-allocation optimization of a commercial aircraft maximizing airline profit},
+  volume = {56},
+  year = {2019}
+}
+
+@article{Jasa2018a,
+  abstract = {To teach multidisciplinary design optimization (MDO) to students effectively, it is useful to have accessible software that runs quickly, allowing hands-on exploration of coupled systems and optimization methods. Open-source software exists for low-fidelity aerodynamic or structural analysis, but there is no existing software for fast tightly coupled aerostructural analysis and design optimization. To address this need, we present OpenAeroStruct, an open-source low-fidelity aerostructural analysis and optimization tool developed in NASA's OpenMDAO framework. It uses the coupled adjoint method to compute the derivatives required for efficient gradient-based optimization. OpenAeroStruct combines a vortex lattice method and 1-D finite-element analysis to model lifting surfaces, such as aircraft wings and tails, and uses the coupled-adjoint method to compute the aerostructural derivatives. We use the Breguet range equation to compute the fuel burn as a function of
+structural weight and aerodynamic performance. OpenAeroStruct has proved effective both as an educational tool and as a benchmark for researching new MDO methods. There is much more potential to be exploited as the research community continues to develop and use this tool. },
+  author = {John P. Jasa and John T. Hwang and Joaquim R. R. A. Martins},
+  doi = {10.1007/s00158-018-1912-8},
+  journal = {Structural and Multidisciplinary Optimization},
+  keywords = {openmdao, OpenAeroStruct, ccavd},
+  month = {April},
+  number = {4},
+  pages = {1815--1827},
+  publisher = {Springer},
+  title = {Open-source coupled aerostructural optimization using {Python}},
+  volume = {57},
+  year = {2018}
+}
+
+@article{Jasa2020a,
+  abstract = {Aircraft are multidisciplinary systems that are challenging to design due to interactions between the subsystems. The relevant disciplines, such as aerodynamic, thermal, and propulsion systems, must be considered simultaneously using a path-dependent formulation to assess aircraft performance accurately. In this paper, we construct a coupled aero-thermal-propulsive-mission multidisciplinary model to optimize supersonic aircraft considering their path-dependent performance. This large-scale optimization problem captures non-intuitive design trades that single disciplinary models and path-independent methods cannot resolve. We present optimal flight profiles for a supersonic aircraft with and without thermal constraints. We find that the optimal flight trajectory depends on thermal system performance, showing the need to optimize considering the path-dependent multidisciplinary interactions.},
+  author = {John Jasa and Benjamin Brelje and Justin Gray and Charles A. Mader and Joaquim R. R. A. Martins},
+  doi = {10.3390/aerospace7100152},
+  journal = {Aerospace},
+  keywords = {ccavd, ank, OpenMDAO},
+  month = {October},
+  number = {152},
+  title = {Large-Scale Path-Dependent Optimization of Supersonic Aircraft},
+  volume = {7},
+  year = {2020}
+}
+
+@article{Yildirim2022a,
+  abstract = {Boundary-layer ingestion (BLI) offers the potential for significant fuel burn reduction by exploiting tightly coupled aeropropulsive effects. NASA's Single-aisle Turboelectric Aircraft with Aft Boundary-Layer propulsion (STARC-ABL) concept employs BLI on an electrically powered tail cone thruster to take advantage of the technology on what is otherwise a conventional airframe. Despite the traditional airframe of this concept, aeropropulsive integration is critical to the BLI propulsor's performance. Therefore, it is vital to employ tightly coupled aeropropulsive models to design BLI systems. In this work, 3-D RANS simulations are used to model the aerodynamics, and 1-D thermodynamic cycle analyses are used to model the propulsion system. The two models are tightly coupled using NASA's OpenMDAO framework, enabling efficient design optimization through gradient-based optimization with analytic derivatives. Using this coupled aeropropulsive framework, 18 computational
+fluid dynamics (CFD)-based aeropropulsive design optimizations are performed to study the power requirements of the BLI configuration and a reference podded configuration where the electric fan ingests freestream air. This study provides the first set of CFD-based performance data for the STARC-ABL concept across the design space of BLI fan size and pressure ratio. The results quantify the power savings through BLI compared to a traditional propulsion system.},
+  author = {Anil Yildirim and Justin S. Gray and Charles A. Mader and Joaquim R. R. A. Martins},
+  doi = {10.2514/1.C036103},
+  journal = {Journal of Aircraft},
+  keywords = {aeroprop, ank, openmdao, xsede},
+  month = {July},
+  number = {4},
+  pages = {896--911},
+  title = {Boundary Layer Ingestion Benefit for the {STARC}-{ABL} Concept},
+  volume = {59},
+  year = {2022}
+}
